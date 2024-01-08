@@ -1,0 +1,337 @@
+*{
+    font-family: 'Frank Ruhl Libre', serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand,.footer .footer-heat{
+    font-size:2.5rem;
+    font-weight: bold;
+    background:linear-gradient(to right,#e84118,#4cd137);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* header scroll */
+.header-scrolled{
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0,0, 0.15);
+}
+/* navbar toggle */
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        margin-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, .07);
+        background: #FFFFFF;
+        width: 100%;
+        padding-left: 20px;
+        border-radius: 10px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/* carpusel_head */
+
+ .carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    z-index: 1;
+}
+/* carousel-item */
+@media(max-width:588px){
+    .carousel-item{
+        position: relative;
+        min-height: 450px;
+
+    }
+    .carousel-item img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+/* carousel-control-prev */
+.arousel-control-next{
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #4cd137;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+/* formar */
+#formar{
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+#about{
+    font-size: 1.1rem;
+    object-fit:cover;
+}
+.bg-icon p{
+    font-size: 1.1rem;
+}
+
+.fa-check{
+    color: #4cd137;   
+    
+}
+#read{
+    background-color: #4cd137;
+}
+.bg-icon {
+    background: url(img/bg-icon.png) center center repeat;
+    background-size: contain;
+}
+/* our_features */
+.btn-features{
+    border:2px solid;
+    border-color: #4cd137;
+    color: #4cd137;
+}
+.btn-features:hover{
+    background-color: #4cd137;
+    color: white;
+}
+.card{
+    outline: none;
+    border: none;
+}
+.card-header{
+    outline: none;
+    border: none;
+}
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#4cd137;
+    
+}
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:red;
+}
+/* our_Products */
+.our_Products{
+    font-size: 1.1rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.our_Products::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    top: 0px;
+    transform: translateX(0);
+    background:#4cd137;
+} 
+.our_Products::after{
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top:5px;
+    transform: translateX(0);
+    background:red;
+
+} 
+.our_Products button{
+    border: 2px solid #4cd137 ;
+    padding: 8px ;
+    margin: 5px;
+}
+.our_Products button:hover{
+    background-color: #4cd137;
+    color: white;
+}
+/* Our Products */
+.img-container img{
+    width: 250px;
+    height: 250px;
+    object-fit:contain;
+}
+.doller {
+    color: #4cd137;
+}
+.fa-eye ,
+.fa-shopping-bag{
+    color: #4cd137;
+}
+/* Visit_Our_Firm */
+.Visit_Our_Firm{
+    background-color: #4cd137;
+    font-size: 1.1rem;
+}
+
+/*Customer Review start   */
+.carousell img{
+    width:60px;
+    height:60px;
+}
+.customer_review p{
+    font-size: 1.1rem;
+}
+.cardd{
+    margin-top: 30px;
+}
+.warp .quote{
+    top:-15px;
+    left: 20px;
+    color:#4cd137;
+}
+
+.carousell .owl-item .cardd,
+.carousell .owl-item .cardd * {
+    transition: .5s;
+}
+
+.carousell .owl-item.center .cardd {
+    background: #4cd137!important;
+}
+
+.carousell .owl-item.center .cardd * {
+    color: #FFFFFF !important;
+}
+
+.carousell .owl-item.center .cardd .quote {
+    color:#e84118 !important;
+}
+
+.carousell .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousell .owl-nav .owl-prev,
+.carousell .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111111 !important;
+    border: 2px solid #4cd137 !important;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.carousell .owl-nav .owl-prev:hover,
+.carousell .owl-nav .owl-next:hover {
+    color: #FFFFFF !important;
+    background:#4cd137;
+}
+
+.farmer img{
+    width:100%;
+    height: 319px;
+    object-fit:cover;
+}
+.footer{
+    margin-top: 80px;
+}
+.footer p{
+    font-size:1.1rem;
+}
+.footer_btn .btn{
+    width: 40px;
+    height: 40px;
+    text-align: center !important;
+    color:white;
+    border: 1px solid white;
+    padding:5px;
+    border-radius: 50%;   
+}
+.btn-link{
+    text-decoration: none;
+    display: flex;
+}
+.btn-link::before{
+    content: '>';
+    width: 1.1rem;
+    font-weight: bold;
+    margin-right:5px;
+}
+.btn-link:hover{
+    color: white !important;
+    font-size:1.2rem;
+}
+.form{
+    max-width: 400px;
+    font-size: 1.1rem;
+    border: 1px solid white;
+}
+.form input{
+    outline: none;
+    border: none;
+}
+.form button{
+    color:white;
+    background-color: #4cd137 !important;
+    border: none;
+} 
+.bg-background{
+    width:100%;
+    height:60vh;
+    background: url(img/carousel-2.jpg);
+    background-position:center ;
+    background-size:cover;
+    position: relative;
+}
+.about-head{
+    position: absolute;
+    top:170px;
+    
+}
+.details p{
+    font-size: 1.1rem;
+}
+/* scroll button */
+.button{
+    border-radius: 50%;
+    padding: 10px;
+    background-color:rgb(49, 255, 49);
+    color: white;
+    border-color: aliceblue;
+    position: fixed;
+    bottom:16px;
+    right: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.activee{
+    bottom:32px;
+    pointer-events: auto;
+    opacity: 1;
+}
